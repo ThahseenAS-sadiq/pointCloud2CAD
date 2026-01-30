@@ -198,6 +198,3 @@ This workflow mirrors:
 ```bash
 conda activate point2cad
 python main.py
-
-## 🔄 Pipeline Flow
-
