@@ -52,11 +52,15 @@ STEP Export (final_solid.step)
 
 ## 📂 Project Structure
 point2cad-project/
-│
 ├── data/
-│   ├── raw_pointcloud/        # input.ply
-│   ├── segmented/             # segmented regions
-│   └── outputs/               # mesh + CAD outputs
+│   ├── raw_pointcloud/
+│   │   └── input.ply
+│   ├── segmented/
+│   │   └── plane_*.ply
+│   └── outputs/
+│       ├── final_mesh.ply
+│       ├── final_mesh.stl
+│       └── final_solid.step
 │
 ├── src/
 │   ├── preprocessing/
@@ -198,3 +202,4 @@ This workflow mirrors:
 ```bash
 conda activate point2cad
 python main.py
+
